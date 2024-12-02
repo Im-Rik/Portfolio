@@ -3,6 +3,7 @@ import Intro from './components/Intro';
 import About from './components/About';
 import Experience from './components/Experience'
 import Works from './components/Works'
+import Feedback from './components/Feedback'
 
 
 const App = () => (
@@ -11,6 +12,7 @@ const App = () => (
     <About />
     <Experience/>
     <Works/>
+    <Feedback/>
   </>
 )
 
