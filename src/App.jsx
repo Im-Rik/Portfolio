@@ -4,7 +4,7 @@ import About from './components/About';
 import Experience from './components/Experience'
 import Works from './components/Works'
 import Feedback from './components/Feedback'
-
+import Contact from './components/Contact'
 
 const App = () => (
   <>
@@ -13,6 +13,7 @@ const App = () => (
     <Experience/>
     <Works/>
     <Feedback/>
+    <Contact/>
   </>
 )
 

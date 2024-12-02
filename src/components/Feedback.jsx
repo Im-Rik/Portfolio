@@ -101,7 +101,7 @@ const FeedbackCarousel = () => {
         const animateCarousel = async () => {
           await animationControls.start({
             x: `-${totalWidth}px`,
-            transition: { duration: 50, ease: "linear" },
+            transition: { duration: 300, ease: "linear" },
           });
       
           // Reset position after animation ends
@@ -157,6 +157,20 @@ const Feedbacks = () => {
 
         
       </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute xs:bottom-10 bottom-20 w-full flex justify-center items-center z-10 lg:hidden">
+          <a href="#about">
+            <div className="w-[30px] h-[60px] rounded-3xl border-4 border-purple-500 flex justify-center items-center">
+              <motion.div
+                animate={{ y: [0, 23, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}
+                className="w-3 h-3 rounded-full bg-purple-500 mb-1"
+              />
+            </div>
+          </a>
+        </div>
+
     </section>
   );
 };
