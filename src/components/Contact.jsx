@@ -75,9 +75,9 @@ const Contact = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-10 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-10 max-w-7xl mx-auto ">
           {/* Contact Form */}
-          <div className="bg-black rounded-xl py-8 px-12">
+          <div className="bg-black rounded-xl py-8 px-12 border-2 border-gray-800">
             <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
               <label className="flex flex-col">
                 <span className="text-white font-medium mb-4">Your Name</span>

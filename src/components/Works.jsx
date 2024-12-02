@@ -141,7 +141,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
       animate="animate"
       whileHover="hover"
       whileTap="whileTap"
-      className="relative xs:w-[300px] w-full bg-gradient-to-b from-gray-400 to-blue-500 rounded-xl p-[2px] shadow-lg"
+      className="relative xs:w-[300px] w-full bg-gradient-to-b from-gray-800 to-indigo-900 rounded-xl p-[2px] shadow-lg"
     >
       <div className="bg-gray-900 rounded-xl py-5 px-6 min-h-[360px] flex flex-col items-center text-center">
         {/* Project Image */}

@@ -5,6 +5,7 @@ import Experience from './components/Experience'
 import Works from './components/Works'
 import Feedback from './components/Feedback'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 const App = () => (
   <>
@@ -14,6 +15,7 @@ const App = () => (
     <Works/>
     <Feedback/>
     <Contact/>
+    <Footer/>
   </>
 )
 
