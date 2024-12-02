@@ -73,7 +73,7 @@ const tiltVariants = (index) => ({
 
 const About = () => {
   return (
-    <section className="relative w-full min-h-screen h-auto bg-gradient-to-b from-black via-indigo-900 to-black text-white overflow-hidden">
+    <section className="relative w-full min-h-screen h-auto bg-gradient-to-b from-blue-950 via-gray-950 to-gray-950 text-white overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-6 sm:px-16 py-10">
             {/* Introduction Section */}
             <div>
@@ -83,7 +83,7 @@ const About = () => {
                 variants={fadeIn('up', 0, 1)}
                 className="space-y-4"
               >
-                <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">INTRODUCTION</p>
+                <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider text-gray-400 font-mono">INTRODUCTION</p>
                 <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">Overview.</h2>
                 <p className="mt-4 text-secondary text-[19px] max-w-3xl leading-[30px]">
                   I'm a skilled Software developer with experience in JavaScript and TypeScript and expertise in frameworks like React, Node.js, and Three.js. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems.

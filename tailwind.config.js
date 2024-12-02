@@ -5,7 +5,9 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}", // Make sure all your component files are included
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: { 'mono': ['Space Mono', 'monospace'], },
+    },
   },
   plugins: [],
 }
