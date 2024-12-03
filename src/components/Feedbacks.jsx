@@ -1,56 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
+import {testimonials} from "../constants"
 
-const testimonials = [
-  {
-    name: "John Doe 1",
-    testimonial: "This is an amazing product. It really helped me in my work, and I highly recommend it!",
-    designation: "Software Engineer",
-    company: "TechCorp",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
-    link: "https://linkedin.com",
-  },
-  {
-    name: "Jane Smith 2",
-    testimonial: "I have been using this product for a few months now, and it has truly exceeded my expectations.",
-    designation: "Product Manager",
-    company: "InnovateX",
-    image: "https://randomuser.me/api/portraits/women/2.jpg",
-    link: "https://linkedin.com",
-  },
-  {
-    name: "John Doe 3",
-    testimonial: "This is an amazing product. It really helped me in my work, and I highly recommend it!",
-    designation: "Software Engineer",
-    company: "TechCorp",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
-    link: "https://linkedin.com",
-  },
-  {
-    name: "Jane Smith 4",
-    testimonial: "I have been using this product for a few months now, and it has truly exceeded my expectations.",
-    designation: "Product Manager",
-    company: "InnovateX",
-    image: "https://randomuser.me/api/portraits/women/2.jpg",
-    link: "https://linkedin.com",
-  },
-  {
-    name: "John Doe 5",
-    testimonial: "This is an amazing product. It really helped me in my work, and I highly recommend it!",
-    designation: "Software Engineer",
-    company: "TechCorp",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
-    link: "https://linkedin.com",
-  },
-  {
-    name: "Jane Smith 6",
-    testimonial: "I have been using this product for a few months now, and it has truly exceeded my expectations.",
-    designation: "Product Manager",
-    company: "InnovateX",
-    image: "https://randomuser.me/api/portraits/women/2.jpg",
-    link: "https://linkedin.com",
-  },
-];
+
 
 const FeedbackCard = ({ testimonial, name, designation, company, image, link }) => (
   <div className="flex-shrink-0 w-[320px] h-[400px] bg-black-200 p-8 rounded-3xl border-2 border-gray-300 shadow-lg flex flex-col justify-between">
@@ -161,11 +113,11 @@ const Feedbacks = () => {
       {/* Scroll Indicator */}
       <div className="absolute xs:bottom-10 bottom-20 w-full flex justify-center items-center z-10 lg:hidden">
           <a href="#about">
-            <div className="w-[30px] h-[60px] rounded-3xl border-4 border-purple-500 flex justify-center items-center">
+            <div className="w-[30px] h-[60px] rounded-3xl border-4 border-gray-400 flex justify-center items-center">
               <motion.div
                 animate={{ y: [0, 23, 0] }}
                 transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}
-                className="w-3 h-3 rounded-full bg-purple-500 mb-1"
+                className="w-3 h-3 rounded-full bg-gray-300 mb-1"
               />
             </div>
           </a>

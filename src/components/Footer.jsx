@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="relative z-10 text-center">
           <h3 className="text-2xl font-bold text-white">Let's Connect!</h3>
           <p className="text-gray-400 mt-4">
-            Crafted with love, driven by pure determination (And maybe a little bit of copy-pasting). It might be over-animated, but it's all about the fun of trying new things. And don't worry—updates are always on the way!
+            Crafted with love, driven by pure determination (And maybe a little bit of prompt Engineering). It might be over-animated, but it's all about the fun of trying new things. And don't worry—updates are always on the way!
           </p>
           
           {/* Social Media Icons */}

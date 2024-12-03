@@ -1,24 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import {services} from '../constants'
 
-const services = [
-  {
-    title: 'Frontend Development',
-    icon: 'https://via.placeholder.com/64',
-  },
-  {
-    title: 'Backend Development',
-    icon: 'https://via.placeholder.com/64',
-  },
-  {
-    title: 'UI/UX Design',
-    icon: 'https://via.placeholder.com/64',
-  },
-  {
-    title: 'Cloud Integration',
-    icon: 'https://via.placeholder.com/64',
-  },
-];
 
 const fadeIn = (direction = 'up', delay = 0, duration = 0.5) => ({
   hidden: {
@@ -85,8 +68,8 @@ const About = () => {
               >
                 <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider text-gray-400 font-mono">INTRODUCTION</p>
                 <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">Overview.</h2>
-                <p className="mt-4 text-secondary text-[19px] max-w-3xl leading-[30px]">
-                  I'm a skilled Software developer with experience in JavaScript and TypeScript and expertise in frameworks like React, Node.js, and Three.js. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems.
+                <p className="mt-4 text-secondary text-gray-300 text-[19px] max-w-3xl leading-[30px]">
+                  I'm a skilled Software developer with experience in JavaScript and expertise in frameworks like React, Express.js., Tailwind, EJS. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems.
                 </p>
               </motion.div>
             </div>
@@ -115,9 +98,9 @@ const ServiceCard = ({ title, icon, index }) => (
           initial="hidden"
           animate="show"
           whileHover = "hover"
-          className="bg-gray-900 rounded-xl py-5 px-12 min-h-[320px] flex flex-col items-center text-center">
+          className="bg-gray-900 rounded-xl py-5 px-12 min-h-[320px] flex flex-col items-center justify-center text-center">
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+          <h3 className="text-white text-[20px] font-bold text-center mt-8">{title}</h3>
         </motion.div>
   
       </motion.div>
