@@ -25,11 +25,11 @@ const EducationCard = ({ education }) => (
     contentArrowStyle={{ borderRight: '7px solid #232631' }}
     date={education.date}
     iconStyle={{ background: education.iconBg }}
-    // icon={
-    //   <div className="flex justify-center items-center w-full h-full ">
-    //     <img src={education.icon} alt={education.institute_name} className="w-[60%] h-[60%] object-contain" />
-    //   </div>
-    // }
+    icon={
+      <div className="flex justify-center items-center w-full h-full ">
+        <img src={education.icon} alt={education.institute_name} className="w-[80%] h-[80%] object-contain" />
+      </div>
+    }
   >
     <div>
       <h3 className="text-white text-[24px] font-bold">{education.title}</h3>

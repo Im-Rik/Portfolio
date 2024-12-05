@@ -22,7 +22,9 @@ import {
     sourav,
     studynotion,
     vstream,
-    blogify
+    blogify,
+    one, 
+    two
   } from "../assets";
   
   export const navLinks = [
@@ -114,7 +116,7 @@ import {
     {
       title: 'Vidyanagar Multipurpose School',
       institute_name: 'South 24 pgs.',
-      icon: 'https://via.placeholder.com/64', // Replace with actual icon URL
+      icon: one, // Replace with actual icon URL
       iconBg: '#383E56',
       date: 'January 2012 - March 2020',
       points: [
@@ -126,7 +128,7 @@ import {
     {
       title: 'Netaji Subhas Engineering College',
       institute_name: 'Kolkata',
-      icon: 'https://via.placeholder.com/64', // Replace with actual icon URL
+      icon: two, // Replace with actual icon URL
       iconBg: '#E6DEDD',
       date: 'September 2021 - July 2025',
       points: [

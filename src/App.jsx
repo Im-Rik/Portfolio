@@ -6,16 +6,19 @@ import Projects from './components/Projects'
 import Feedback from './components/Feedbacks'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Temp2 from './components/temp2'
 
 const App = () => (
   <>
     <Intro />
     <Overview />
+    {/* <Temp2/> */}
     <Education/>
     <Projects/>
     <Feedback/>
     <Contact/>
     <Footer/>
+   
 
   </>
 )

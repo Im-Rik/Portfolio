@@ -37,6 +37,9 @@ import chatbot from "./chatbot.jpg"
 import blogify from "./blogify.png"
 import vstream from "./vstream.png"
 
+import one from './one.png'
+import two from './two.png'
+
 
 
 
@@ -96,5 +99,7 @@ export {
   jarvis,
   chatbot,
   blogify,
-  vstream
+  vstream,
+  one,
+  two
 };
