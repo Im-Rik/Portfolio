@@ -29,16 +29,16 @@ import {
   
   export const navLinks = [
     {
-      id: "about",
+      id: "overview",
       title: "About",
     },
     {
-      id: "work",
+      id: "education",
       title: "Education",
     },
     {
-      id: "project",
-      title: "Project",
+      id: "projects",
+      title: "Projects",
     },
     {
       id: "contact",
@@ -126,7 +126,7 @@ import {
       ],
     },
     {
-      title: 'Netaji Subhas Engineering College',
+      title: 'Netaji Subhash Engineering College',
       institute_name: 'Kolkata',
       icon: two, // Replace with actual icon URL
       iconBg: '#E6DEDD',

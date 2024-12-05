@@ -1,26 +1,36 @@
 import './index.css';
-import Intro from './components/Intro';
+import Navbar from './components/Navbar'
+import Home from './components/Home';
 import Overview from './components/Overview';
 import Education from './components/Education'
 import Projects from './components/Projects'
 import Feedback from './components/Feedbacks'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import Temp2 from './components/temp2'
+import Banner from './components/temp2'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 const App = () => (
   <>
-    <Intro />
-    <Overview />
-    {/* <Temp2/> */}
-    <Education/>
-    <Projects/>
-    <Feedback/>
-    <Contact/>
-    <Footer/>
-   
+    <BrowserRouter>
 
+      <Navbar />
+      
+      <div id="home"><Home /></div>
+      <div id="overview"><Overview /></div>
+      <div id="education"><Education /></div>
+      <div id="projects"><Projects /></div>
+      <div id="feedback"><Feedback /></div>
+      <div id="contact"><Contact /></div>
+
+      <Footer/>
+
+      <Banner/>
+
+    </BrowserRouter>
   </>
-)
+);
 
-export default App
+
+
+export default App;
