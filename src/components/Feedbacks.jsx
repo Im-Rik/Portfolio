@@ -1,5 +1,7 @@
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
+import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import {testimonials} from "../constants"
 
 
@@ -104,15 +106,14 @@ const Feedbacks = () => {
         </div>
 
         <div className="mt-8">
-        <FeedbackCarousel />
+          <InfiniteMovingCards items={testimonials} direction="left" speed="slow" />
         </div>
-
         
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute xs:bottom-10 bottom-20 w-full flex justify-center items-center z-10 lg:hidden">
-          <a href="#about">
+      <div className="absolute xs:bottom-10 bottom-20 w-full flex justify-center items-center z-10 sm:hidden">
+          <a href="#contact">
             <div className="w-[30px] h-[60px] rounded-3xl border-4 border-gray-400 flex justify-center items-center">
               <motion.div
                 animate={{ y: [0, 23, 0] }}

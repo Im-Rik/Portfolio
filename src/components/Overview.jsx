@@ -14,7 +14,7 @@ const About = () => {
 };
 
 const IntroductionSection = () => (
-  <section className="relative w-full h-auto bg-gradient-to-b from-blue-950 via-gray-950 to-gray-950 text-white overflow-hidden">
+  <section className="relative w-full h-auto bg-gradient-to-b from-slate-950 via-gray-900 to-gray-950 text-white overflow-hidden">
     <div className="relative max-w-7xl mx-auto px-6 sm:px-16 py-10">
       <motion.div
         initial="hidden"
@@ -48,10 +48,10 @@ const TechnologiesSection = () => (
 );
 
 const TechCard = ({ tech }) => (
-  <div className="w-40 h-40">
-    <div className="relative h-32 w-32 rounded-full flex items-center justify-center">
+  <div className="w-32 h-32 sm:w-40 sm:h-40">
+    <div className="relative h-28 w-28 sm:h-32 sm:w-32 rounded-full flex items-center justify-center">
       <div className="absolute w-full h-full bg-black/[0.8] blur-sm rounded-full" />
-      <img src={tech.icon} alt={tech.name} className="z-20 w-24 pointer-events-none" />
+      <img src={tech.icon} alt={tech.name} className="z-20 w-20 sm:w-24 pointer-events-none" />
     </div>
   </div>
 );

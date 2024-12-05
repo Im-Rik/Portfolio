@@ -7,7 +7,7 @@ import Projects from './components/Projects'
 import Feedback from './components/Feedbacks'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import Banner from './components/temp2'
+import InfiniteMovingCardsDemo from './components/temp2'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 const App = () => (
@@ -24,8 +24,6 @@ const App = () => (
       <div id="contact"><Contact /></div>
 
       <Footer/>
-
-      <Banner/>
 
     </BrowserRouter>
   </>

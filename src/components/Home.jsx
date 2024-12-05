@@ -4,11 +4,14 @@ import { motion } from "framer-motion";
 import { LampContainer } from "./ui/lamp";
 
 const Banner = () => (
-  <section className="relative w-full mx-auto overflow-hidden">
+  <section className="relative bg-slate-950 w-full mx-auto overflow-hidden">
     <LampContainer>
       <AnimatedHeading />
     </LampContainer>
-    <ScrollIndicator />
+    <div className="">
+      <ScrollIndicator />
+    </div>
+    
   </section>
 );
 
@@ -31,7 +34,7 @@ const AnimatedHeading = () => (
 );
 
 const ScrollIndicator = () => (
-  <div className="absolute xs:bottom-10 bottom-20 w-full flex justify-center items-center z-10">
+  <div className="absolute bottom-36 sm:bottom-16 w-full flex justify-center items-center z-10">
     <a href="#overview">
       <div className="w-[30px] h-[60px] rounded-3xl border-4 border-slate-400 flex justify-center items-center">
         <motion.div

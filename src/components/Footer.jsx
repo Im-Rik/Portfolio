@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaReddit, FaLinkedin, FaInstagram } from "react-icons/fa"; // Importing icons
+import { FaFacebook, FaTwitter, FaReddit, FaLinkedin, FaGithub } from "react-icons/fa"; // Importing icons
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="relative z-10 text-center">
           <h3 className="text-2xl font-bold text-white">Let's Connect!</h3>
           <p className="text-gray-400 mt-4">
-            Crafted with love, driven by pure determination (And maybe a little bit of prompt Engineering). It might be over-animated, but it's all about the fun of trying new things. And don't worry—updates are always on the way!
+            Crafted with love, driven by pure determination.
           </p>
           
           {/* Social Media Icons */}
@@ -26,9 +26,9 @@ const Footer = () => {
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={30} className="hover:text-blue-700 transition-all" />
             </a>
-            {/* <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram size={30} className="hover:text-pink-600 transition-all" />
-            </a> */}
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={30} className="hover:text-pink-600 transition-all" />
+            </a>
           </div>
         </div>
 
