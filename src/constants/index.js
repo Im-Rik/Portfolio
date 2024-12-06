@@ -142,9 +142,9 @@ import {
       points: [
         'Maintained a CGPA of 8.63 up to the 6th semester.',
         'Former member of GNX Club, the official tech club of the Computer Science department, contributing to various technical events.',
-        'Learned and implemented multiple tech stacks, including React, Express.js, Node.js, EJS, Tailwind CSS, and C++.',
         'Developed real-world projects such as a video streaming application.',
-        'Participated in coding competitions and hackathons.',
+        'Participated in multiple coding competitions and hackathons.',
+        'Learned and implemented multiple tech stacks, including React, Express.js, Node.js, EJS, Tailwind CSS, and C++.',
         
       ],
     },
@@ -284,6 +284,18 @@ import {
           name: "nodejs",
           color: "text-red-300",
         },
+        {
+          name: "multer",
+          color: "text-green-500",
+        },
+        {
+          name: "ffmpeg",
+          color: "text-blue-400",
+        },
+        {
+          name: "tailwind",
+          color: "text-red-300",
+        },
       ],
       image: vstream,
       source_code_link: "https://github.com/im-rik/vstream",
@@ -308,6 +320,14 @@ import {
           {
             name: "nodejs",
             color: "text-pink-400",
+          },
+          {
+            name: "bootstrap",
+            color: "text-sky-500",
+          },
+          {
+            name: "multer",
+            color: "text-green-600",
           },
         ],
       image: blogify,
