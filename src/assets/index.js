@@ -1,5 +1,5 @@
-import logo from "./logo.svg";
-import logo2 from "./logo2.svg"
+import logo2 from "./logo.gif";
+import logo from "./logo2.png"
 import fevicon from "./fevicon.svg"
 import backend from "./backend.png";
 import creator from "./creator.png";
@@ -54,6 +54,12 @@ import mayukh from "./company/mayukh.jpg"
 import anik from "./company/anik.jpeg"
 import sourav from "./company/sourav.png"
 import harshit from "./company/harshit.png"
+import bhaskar from "./company/bhaskar.jpg"
+import suman from "./company/suman.jpg"
+import ankan from "./company/ankan.jpg"
+import abhisekh from "./company/abhisekh.png"
+import debarghya from "./company/debarghya.png"
+import anirban from "./company/anirban.jpg"
 
 export {
   logo,
@@ -101,5 +107,12 @@ export {
   blogify,
   vstream,
   one,
-  two
-};
+  two,
+  bhaskar,
+  suman,
+  ankan,
+  abhisekh,
+  debarghya,
+  anirban,
+
+}

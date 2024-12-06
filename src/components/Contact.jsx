@@ -1,10 +1,11 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Player } from '@lottiefiles/react-lottie-player';
+import { SparklesCore } from '../ui/sparkles';
+import { Meteors } from '../ui/meteors';
 
-// Email validation for temporary domains
 const temporaryEmailDomains = [
-  "10minutemail.com", "guerrillamail.com", "mailinator.com", 
+  "10minutemail.com", "guerrillamail.com", "mailinator.com",
   "maildrop.cc", "temp-mail.org", "tempmail.com", "yopmail.com", "maxturns.com",
 ];
 
@@ -41,14 +42,14 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_ztyppth",
-        "template_1tquwkq",
+        "service_pclka7a",
+        "template_zkfonyq",
         {
           from_name: form.name,
           from_email: form.email,
           message: form.message,
         },
-        "ITaKtWYEf6-rHf02v"
+        "wf7QaPtFf0NLIcWkb"
       )
       .then(
         () => {
@@ -65,6 +66,19 @@ const Contact = () => {
 
   return (
     <section className="relative w-full min-h-screen h-auto bg-gradient-to-b from-gray-950 via-gray-900 to-slate-900 text-white overflow-hidden">
+      {/* Sparkles Background */}
+      <div className="absolute inset-0 z-10">
+        <SparklesCore
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={50}
+          className="w-full h-full"
+          particleColor="#FFFFFF"
+        />
+      </div>
+
       <div className="relative max-w-7xl mx-auto px-6 sm:px-16 py-10">
         <div className="space-y-4">
           <p className="sm:text-[18px] text-[14px] text-gray-400 uppercase tracking-wider font-mono">
@@ -75,62 +89,67 @@ const Contact = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-10 max-w-7xl mx-auto ">
-          {/* Contact Form */}
-          <div className="bg-black rounded-xl py-8 px-12 border-2 border-gray-800">
+        <div className="py-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+          
+          <div className="bg-black rounded-xl py-8 px-12 border-2 border-gray-800 relative z-10">
+           
+           {/* Meteors Effect */}
+            {/* <div className="absolute inset-0 overflow-hidden">
+              <Meteors number={5} className="z-0" />
+            </div> */}
+
+            {/* Contact Form */}
             <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
               <label className="flex flex-col">
-                <span className="text-white font-medium mb-4">Your Name</span>
+                <span className="text-white font-medium mb-4 z-20">Your Name</span>
                 <input
                   type="text"
                   name="name"
                   value={form.name}
                   onChange={handleChange}
                   placeholder="What is your name?"
-                  className="bg-gray-800 py-4 px-6 placeholder:text-gray-400 rounded-lg outline-none border-none font-medium"
+                  className="bg-gray-800 py-4 px-6 placeholder:text-gray-400 rounded-lg outline-none border-none font-medium z-20"
                 />
               </label>
 
               <label className="flex flex-col">
-                <span className="text-white font-medium mb-4">Your Email</span>
+                <span className="text-white font-medium mb-4 z-20">Your Email</span>
                 <input
                   type="email"
                   name="email"
                   value={form.email}
                   onChange={handleChange}
                   placeholder="What is your email?"
-                  className="bg-gray-800 py-4 px-6 placeholder:text-gray-400 rounded-lg outline-none border-none font-medium"
+                  className="bg-gray-800 py-4 px-6 placeholder:text-gray-400 rounded-lg outline-none border-none font-medium z-20"
                 />
               </label>
 
               <label className="flex flex-col">
-                <span className="text-white font-medium mb-4">Your Message</span>
+                <span className="text-white font-medium mb-4 z-20">Your Message</span>
                 <textarea
                   rows="7"
                   name="message"
                   value={form.message}
                   onChange={handleChange}
                   placeholder="What do you want to say?"
-                  className="bg-gray-800 py-4 px-6 placeholder:text-gray-400 rounded-lg outline-none border-none font-medium"
+                  className="bg-gray-800 py-4 px-6 placeholder:text-gray-400 rounded-lg outline-none border-none font-medium z-20"
                 />
               </label>
 
               <button
                 type="submit"
-                className="bg-blue-600 py-3 px-8 text-white font-bold rounded-lg shadow-md hover:bg-blue-700 transition-all"
+                className="bg-blue-600 py-3 px-8 text-white font-bold rounded-lg shadow-md hover:bg-blue-700 transition-all z-28"
               >
                 {loading ? 'Sending...' : 'Send'}
               </button>
             </form>
           </div>
-
-          {/* Lottie Animation - Only visible on large screens */}
-          <div className="hidden lg:flex items-center justify-center">
+          <div className="h-full w-full flex items-center justify-center hidden md:block z-20">
             <Player
-              autoplay
+              src="https://lottie.host/37064f87-9476-4e90-af84-205081c9c177/VjgnkyXfjl.json"
+              className="w-full h-full z-20"
               loop
-              src="https://lottie.host/6bd905e2-3b09-42f1-9d45-00ebd7df8659/Q8MH2r5h2z.json"
-              className="w-full max-w-[500px] lg:max-w-[700px]"
+              autoplay
             />
           </div>
         </div>

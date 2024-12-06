@@ -1,4 +1,5 @@
 import {
+    logo,
     mobile,
     backend,
     creator,
@@ -24,7 +25,13 @@ import {
     vstream,
     blogify,
     one, 
-    two
+    two,
+    bhaskar,
+    suman,
+    ankan,
+    abhisekh,
+    debarghya,
+    anirban
   } from "../assets";
   
   export const navLinks = [
@@ -115,14 +122,15 @@ import {
   const educations = [
     {
       title: 'Vidyanagar Multipurpose School',
-      institute_name: 'South 24 pgs.',
+      institute_name: 'South 24 Parganas',
       icon: one, // Replace with actual icon URL
       iconBg: '#383E56',
       date: 'January 2012 - March 2020',
       points: [
-        'Scored 91.7% in the 10th-grade board examinations',
-        'Chose PCMB for higher secondary education',
-        'Scored 93.4% in the 12th-grade board examinations',
+        'Achieved 91.7% in the 10th-grade board examinations.',
+        'Opted for PCMB (Physics, Chemistry, Mathematics, Biology) for higher secondary education.',
+        'Secured 93.4% in the 12th-grade board examinations.',
+        'Actively participated in inter-school science exhibitions, enhancing teamwork skills.',
       ],
     },
     {
@@ -132,67 +140,125 @@ import {
       iconBg: '#E6DEDD',
       date: 'September 2021 - July 2025',
       points: [
-        'Secured 8.63 CGPA upto 6th Semester',
-        'Ex-member of GNX Club, The official Tech club of CSE',
-        'Have learnt multiple tech-stack including React, Express, Node, EJS, Tailwind, CPP',
+        'Maintained a CGPA of 8.63 up to the 6th semester.',
+        'Former member of GNX Club, the official tech club of the Computer Science department, contributing to various technical events.',
+        'Learned and implemented multiple tech stacks, including React, Express.js, Node.js, EJS, Tailwind CSS, and C++.',
+        'Developed real-world projects such as a video streaming application.',
+        'Participated in coding competitions and hackathons.',
+        
       ],
     },
   ];
   
+  
   const testimonials = [
     {
       testimonial:
-        "Collaborative and enthusiastic developer based in Kolkata, passionate about creating innovative solutions.",
+        "A collaborative and enthusiastic developer with a passion for building innovative solutions. Always eager to learn and improve.",
       name: "Riddhi Mondol",
       designation: "Leader",
       company: "SIH Hackathon",
       image: riddhi,
-      link: "https://www.linkedin.com/in/riddhi-mondal-659b91222/"
+      link: "https://www.linkedin.com/in/riddhi-mondal-659b91222/",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about his projects like Sourik does.",
+        "One of the most dedicated developers I've worked with. Truly cares about his projects and delivers with exceptional attention to detail.",
       name: "Anik Adhikari",
-      designation: "SDE-1",
+      designation: "Employed",
       company: "TCS",
       image: anik,
-      link: "https://www.linkedin.com/in/anikadhikari/"
+      link: "https://www.linkedin.com/in/anikadhikari/",
     },
     {
       testimonial:
-        "Highly cooperative and always open to listening, valuing diverse perspectives and fostering effective communication.",
+        "Highly cooperative and values diverse perspectives. Listens attentively and ensures effective communication within the team.",
       name: "Rudranil Bhattacharjee",
       designation: "Influencer",
-      company: "Youtube",
+      company: "YouTube",
       image: rudra,
-      link: "https://www.linkedin.com/in/rudranilbhattacharjee/"
+      link: "https://www.linkedin.com/in/rudranilbhattacharjee/",
     },
     {
       testimonial:
-        "Sourik's incredible typing speed shines in coding and Valorant, showcasing his technical and gaming prowess.",
+        "An exceptional problem-solver with a strong sense of teamwork. His enthusiasm for learning is truly inspiring.",
       name: "Mayukh Ganguly",
       designation: "Millionaire",
       company: "Freelancer",
       image: mayukh,
-      link: "https://www.linkedin.com/in/sourik-roy-0755561b1/"
+      link: "https://www.linkedin.com/in/sourik-roy-0755561b1/",
     },
     {
       testimonial:
-        "An enthusiastic developer who collaborates well and values different perspectives in every project.",
+        "A dedicated developer who works well with others and brings unique perspectives to every project he undertakes.",
       name: "Sourav Ghorai",
       designation: "Topper",
       company: "NSEC",
       image: sourav,
-      link: "https://www.linkedin.com/in/souravghorai/"
+      link: "https://www.linkedin.com/in/souravghorai/",
     },
     {
       testimonial:
-        "His enthusiasm, collaborative spirit, and fast problem-solving skills makes him a standout developer.",
+        "Enthusiastic, collaborative, and quick to solve problems. Always a standout in any team setting.",
       name: "Harshit Narayan Trivedi",
       designation: "Python Instructor",
-      company: "Youtube",
+      company: "YouTube",
       image: harshit,
-      link: "https://www.linkedin.com/in/harshit-narayan-trivedi-75b1a4220/"
+      link: "https://www.linkedin.com/in/harshit-narayan-trivedi-75b1a4220/",
+    },
+    {
+      testimonial:
+        "A quick learner with an amazing ability to break down complex problems into simple solutions. Working with him is always a pleasure.",
+      name: "Abhisek Bose",
+      designation: "Employed",
+      company: "TCS Digital",
+      image: abhisekh,
+      link: "https://www.linkedin.com/in/abhisek-bose76/",
+    },
+    {
+      testimonial:
+        "Incredibly resourceful and always willing to help. Strong technical skills paired with a friendly nature make him a great teammate.",
+      name: "Ankan Samanta",
+      designation: "Diplomat",
+      company: "JU",
+      image: ankan,
+      link: "https://www.linkedin.com/in/ankansamanta/",
+    },
+    {
+      testimonial:
+        "His ability to adapt and quickly pick up new technologies is impressive. Delivers quality work consistently.",
+      name: "Bhaskar Biswas",
+      designation: "IITian",
+      company: "IITKGP",
+      image: bhaskar,
+      link: "https://www.linkedin.com/in/bhaskarbiswas/",
+    },
+    {
+      testimonial:
+        "Work ethic and determination are truly remarkable. Consistently delivers high-quality solutions and adds value to every project.",
+      name: "Suman Kuley",
+      designation: "Mathematician",
+      company: "CU",
+      image: suman,
+      link: "https://www.linkedin.com/in/sumankuley/",
+    },
+    {
+      testimonial:
+        "Knows how to solve tough problems with innovative approaches. A reliable and creative team player.",
+      name: "Anirban Bhattacharya",
+      designation: "Calligrapher",
+      company: "NSEC",
+      image: anirban,
+      link: "https://www.linkedin.com/in/anirbanbhattacharya/",
+    },
+    {
+      testimonial:
+        "Combines technical expertise with a positive attitude. Great at bringing out the best in the team.",
+      name: "Debarghya Sardar",
+      designation: "Sage",
+      company: "Internet",
+      image: debarghya,
+      link: "https://www.linkedin.com/in/debarghyasardar/",
     },
   ];
   
@@ -212,7 +278,7 @@ import {
         },
         {
           name: "react",
-          color: "text-green-500",
+          color: "text-yellow-300",
         },
         {
           name: "nodejs",
@@ -229,19 +295,19 @@ import {
         tags: [
           {
             name: "mongodb",
-            color: "text-green-500",
+            color: "text-sky-500",
           },
           {
             name: "expressjs",
-            color: "text-blue-400",
+            color: "text-yellow-400",
           },
           {
-            name: "EJS",
-            color: "text-green-500",
+            name: "ejs",
+            color: "text-green-600",
           },
           {
             name: "nodejs",
-            color: "text-red-300",
+            color: "text-pink-400",
           },
         ],
       image: blogify,

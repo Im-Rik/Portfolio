@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { LampContainer } from "./ui/lamp";
+import { LampContainer } from "../ui/lamp";
 
 const Banner = () => (
   <section className="relative bg-slate-950 w-full mx-auto overflow-hidden">
@@ -20,7 +20,7 @@ const AnimatedHeading = () => (
     initial={{ opacity: 0.5, y: 100 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{
-      delay: 0.3,
+      delay: 0.7,
       duration: 0.8,
       ease: "easeInOut",
     }}
@@ -34,7 +34,7 @@ const AnimatedHeading = () => (
 );
 
 const ScrollIndicator = () => (
-  <div className="absolute bottom-36 sm:bottom-16 w-full flex justify-center items-center z-10">
+  <div className="absolute bottom-40 sm:bottom-16 w-full flex justify-center items-center z-10">
     <a href="#overview">
       <div className="w-[30px] h-[60px] rounded-3xl border-4 border-slate-400 flex justify-center items-center">
         <motion.div

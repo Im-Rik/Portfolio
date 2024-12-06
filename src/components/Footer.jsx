@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaReddit, FaLinkedin, FaGithub } from "react-icons/fa"; // Importing icons
+import { FaFacebook, FaTwitter, FaMedium, FaLinkedin, FaGithub } from "react-icons/fa"; // Importing icons
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="relative z-10 text-center">
           <h3 className="text-2xl font-bold text-white">Let's Connect!</h3>
           <p className="text-gray-400 mt-4">
-            Crafted with love, driven by pure determination.
+            ------------------------------------------------
           </p>
           
           {/* Social Media Icons */}
@@ -17,16 +17,16 @@ const Footer = () => {
             {/* <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={30} className="hover:text-blue-600 transition-all" />
             </a> */}
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/@sourik2002" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={30} className="hover:text-blue-400 transition-all" />
             </a>
-            <a href="https://reddit.com" target="_blank" rel="noopener noreferrer">
-              <FaReddit size={30} className="hover:text-orange-600 transition-all" />
+            <a href="https://medium.com/@Im_Rik" target="_blank" rel="noopener noreferrer">
+              <FaMedium size={30} className="hover:text-orange-600 transition-all" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/sourik-roy-0755561b1/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={30} className="hover:text-blue-700 transition-all" />
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Im-Rik/" target="_blank" rel="noopener noreferrer">
               <FaGithub size={30} className="hover:text-pink-600 transition-all" />
             </a>
           </div>
