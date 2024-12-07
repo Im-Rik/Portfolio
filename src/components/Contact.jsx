@@ -144,7 +144,7 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          <div className="h-full w-full flex items-center justify-center hidden md:block z-20">
+          <div className="h-full w-full flex items-center justify-center hidden lg:block z-20">
             <Player
               src="https://lottie.host/37064f87-9476-4e90-af84-205081c9c177/VjgnkyXfjl.json"
               className="w-full h-full z-20"

@@ -165,7 +165,7 @@ import {
       testimonial:
         "One of the most dedicated developers I've worked with. Truly cares about his projects and delivers with exceptional attention to detail.",
       name: "Anik Adhikari",
-      designation: "Employed",
+      designation: "Developer",
       company: "TCS",
       image: anik,
       link: "https://www.linkedin.com/in/anikadhikari/",
